@@ -30,7 +30,7 @@ public class ExceptionDemo {
 			
 		}
 		 catch (NumberFormatException ne) {
-			 System.out.println("No format Exception");
+			 System.out.println("No format Exception"); //ne.printStckTrace();
 		}
 		
 		System.out.println("After Exception");
