@@ -30,9 +30,14 @@ public class ExceptionDemo {
 			
 		}
 		 catch (NumberFormatException ne) {
-			 System.out.println("No format Exception"); //ne.printStckTrace();
+			 System.out.println("No format Exception"); //ne.printStackTrace();
 		}
 		
-		System.out.println("After Exception");
+	finally {
+		System.out.println("No format Exception");
+		/*The code inside the finally block will execute no matter
+		  what happens in the try or catch blocks 
+		  (except in cases like System.exit() or JVM crashes).*/
 	}
-}
+	
+}}
